@@ -21,7 +21,7 @@ def predict():
   IMAGE_SIZE = (180,180)
   BATCH_SIZE = 32
 
-  model = keras.models.load_model('flowerss.h5')
+  model = keras.models.load_model('flowers.h5')
   img = image.load_img(image_path, target_size=IMAGE_SIZE)
   x = image.img_to_array(img)
   x = np.expand_dims(x, axis=0)
